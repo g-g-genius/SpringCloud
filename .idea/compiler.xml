@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="eurekaClient" />
         <module name="zuul" />
+        <module name="eurekaServer" />
         <module name="nativeConfigServer" />
         <module name="nativeConfigClient" />
         <module name="customer" />
@@ -16,7 +17,8 @@
         <module name="hystrix" />
         <module name="ribbon" />
         <module name="restTemplate" />
-        <module name="eurekaServer" />
+        <module name="configServer" />
+        <module name="configClient" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -25,6 +27,8 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="configClient" options="-parameters" />
+      <module name="configServer" options="-parameters" />
       <module name="customer" options="-parameters" />
       <module name="eurekaClient" options="-parameters" />
       <module name="eurekaServer" options="-parameters" />
