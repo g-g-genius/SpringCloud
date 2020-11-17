@@ -1,0 +1,15 @@
+server:
+  port: 8010
+
+#  微服务的名称
+spring:
+  application:
+    name: provider
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+#    是否将当前服务的IP注册到Eureka Server
+  instance:
+    prefer-ip-address: true
