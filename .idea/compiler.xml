@@ -7,18 +7,20 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="eurekaClient" />
+        <module name="ribbon" />
+        <module name="zipkinClient" />
+        <module name="feign" />
+        <module name="restTemplate" />
+        <module name="nativeConfigClient" />
+        <module name="zipkin" />
         <module name="zuul" />
         <module name="eurekaServer" />
-        <module name="nativeConfigServer" />
-        <module name="nativeConfigClient" />
-        <module name="customer" />
-        <module name="feign" />
         <module name="hystrix" />
-        <module name="ribbon" />
-        <module name="restTemplate" />
+        <module name="eurekaClient" />
+        <module name="nativeConfigServer" />
         <module name="configServer" />
         <module name="configClient" />
+        <module name="customer" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -38,6 +40,8 @@
       <module name="nativeConfigServer" options="-parameters" />
       <module name="restTemplate" options="-parameters" />
       <module name="ribbon" options="-parameters" />
+      <module name="zipkin" options="-parameters" />
+      <module name="zipkinClient" options="-parameters" />
       <module name="zuul" options="-parameters" />
     </option>
   </component>
